@@ -23,9 +23,9 @@
 <section>
 <h1>Testing CSS support with JavaScript</h1>
 
-<p><img src="images/nausicaa-forscher.jpg" width="70%" alt=""></p>
+<p><img src="images/nausicaa-forscher.jpg" width="70%" alt="Nausicaä" title="Nausicaä"></p>
 
-<p>jsunconf 2014, 2014-04-26</p>
+<p><a href="http://2014.jsunconf.eu/">jsunconf 2014</a>, 2014-04-26</p>
 
 </script>
 </section>
@@ -34,7 +34,11 @@
 <script type="text/template">
 # molily
 
-<img src="images/chaplin.gif" alt="">
+<a href="http://chaplinjs.org"><img src="images/chaplin.gif" alt="Chaplin.js"></a>
+
+- <a href="http://molily.de">molily.de</a> – <a href="https://twitter.com/molily">@molily</a>
+- Software developer at <a href="http://9elements.com">9elements</a>
+- Initiator of <a href="http://chaplinjs.org">Chaplin.js</a>
 </script>
 </section>
 
@@ -52,7 +56,7 @@
 <script type="text/template">
 # Why bother?
 
-- Avoid inline styles, toggle classes
+- Gendral rule: Avoid inline styles, toggle classes
 - Separation of concerns:<br>JavaScript: Behavior, CSS: Presentation
 - Sometimes inline styles are necessary
  - Trigger CSS transitions
@@ -67,8 +71,8 @@
 
 - The bridge between CSS and JavaScript
 - Accessing stylesheets and element style via JavaScript
+- <a href="http://dev.w3.org/csswg/cssom/">CSSOM – Editor’s Draft, W3C CSS Working Group</a>
 - Origin: <a href="http://www.w3.org/TR/DOM-Level-2-Style/">DOM 2 CSS</a>
-- <a href="http://dev.w3.org/csswg/cssom/">CSSOM – CSS WG Editor’s Draft</a>
 </script>
 </section>
 
@@ -122,7 +126,7 @@ console.log( getComputedStyle(el).color ); // 'red'
 - JavaScript uses camelCase
  - `borderBottomRightRadius`
 - It’s easy to transform them
-- `camelize` and `dasherize` from PrototypeJS, underscore.string, …
+- `camelize` and `dasherize` from <a href="http://api.prototypejs.org/language/String/prototype/camelize/">Prototype.js</a>, <a href="https://github.com/epeli/underscore.string#string-functions">underscore.string</a>, …
 </script>
 </section>
 
@@ -131,7 +135,7 @@ console.log( getComputedStyle(el).color ); // 'red'
 # Vendor prefixes #yolo
 
 - Experimental implementations
-- `-moz`, `-webkit`, `-ms`, `-op`
+- `-moz`, `-webkit`, `-ms`, `-o`
 <pre><code class="css" data-trim>
 -moz-transform: scale(2);
 -webkit-transform: scale(2);
@@ -165,7 +169,7 @@ el.style.transform
 <script type="text/template">
 # Modernizr’s approach
 
-- I will talk about the internals of the upcoming version 3.0 (master branch)
+- I will talk about the internals of the <a href="https://github.com/Modernizr/Modernizr">upcoming version 3.0 (master branch)</a>
 - Modernizr tries three detection methods:
 
 - For all possible properties (with vendor prefixes), do:
@@ -230,6 +234,9 @@ el.style.transform
 - The Modernizr team (Alex Sexton, Patrick Kettner, Stu Cox…)
 
 # Questions? Feedback?
+
+- <a href="https://twitter.com/molily">@molily on Twitter</a>
+- <a href="mailto:zapperlott@gmail.com">zapperlott@gmail.com</a>
 </script>
 </section>
 
